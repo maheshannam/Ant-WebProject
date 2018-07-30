@@ -2,7 +2,7 @@ try{
     node {
     echo 'Build Started'
     stage('Checkout'){
-         git branch: 'master', credentialsId: 'bitbucket', url: 'https://github.com/devopstrainingblr/Ant-WebProject.git'
+         git branch: 'master', credentialsId: 'bitbucket', url: 'https://github.com/maheshannam/Ant-WebProject.git'
     }
    
         stage('build'){
@@ -33,7 +33,7 @@ try{
     Thanks
     Jenkins
     '''
-   mail bcc: '', body: body_msg, cc: '', from: '', replyTo: '', subject: 'Job Success', to: 'devopstraining@gmail.com'
+   mail bcc: '', body: body_msg, cc: '', from: '', replyTo: '', subject: 'Job Success', to: 'maheshannam743@gmail.com'
    
     }
   }
